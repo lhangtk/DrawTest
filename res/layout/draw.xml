@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择图片" />
+
+        <Button
+            android:id="@+id/button_earser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="橡皮擦" />
+
+        <Button
+            android:id="@+id/button_paint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="画笔" />
+        <Button
+            android:id="@+id/button_laser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="激光笔" />
+        <Button
+            android:id="@+id/button_laser2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="激光笔2" />
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存图片" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:scaleType="fitCenter"/>
+
+        <com.example.drawtest.DrawView
+            android:id="@+id/draw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>
